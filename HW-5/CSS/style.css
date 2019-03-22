@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HEADER*/
+
+.clearfix {
+  display: block;
+  clear: both;
+  content: "";
+}
+.fluid-header {
+  min-height: 90px;
+  background-color: white;
+}
+
+.page-header {
+  width: 1170px;
+  margin: 0 auto;
+  min-height: 90px;
+}
+
+.site-logo {
+  padding-top: 35px;
+  margin: 0 30px;
+}
+
+.site-navigation {
+  float: right;
+  margin: 42px 15px;
+  font-size: 13px;
+  list-style: none;
+}
+
+.site-navigation li {
+float: left;
+}
+
+.list-item a {
+  padding: 0 18px;
+}
+
+.site-navigation a {
+  font-weight: bold;
+  display: block;
+  font-family: "OpenSans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  line-height: 14px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: rgb(26, 188, 156);
+}
+
+/*   MAIN SLIDER   */
+
+.slider-wrp {
+position: relative;
+height: 600px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.conteiner {
+  max-width: 1170px;
+  position: absolute;
+  height: 600px;
+  margin: auto;
+}
+
+.slider-img {
+  height: 600px;
+  width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+.btn {
+  border-style: none;
+  display: block;
+  width: 104px;
+  height: 104px;
+  position: absolute;
+  background-color: rgb(26, 188, 156, 0.5);
+}
+
+.btn-l {
+  position: absolute;
+  top: 225px;
+  left: 30px;
+}
+
+.btn-r {
+  position: absolute;
+  right: 30px;
+  top: 225px;
+}
+
+.text-upp {
+  position: absolute;
+  font-size: 60px;
+  font-family: "Roboto";
+  color: white;
+  top: 200px;
+  right: 214px;
+  text-transform: uppercase;
+}
+
+.text-down {
+  position: absolute;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  right: 488px;
+  top: 284px;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(153, 225, 238);
+}
+
+/*    MAIN TITLE  */
+
+.title {
+  font-size: 48px;
+  padding: 90px 0 80px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: rgb(81, 81, 81);
+}
+
+.title::after {
+  display: block;
+  content: "";
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+  margin: 20px auto;
+  }
+
+/*    MAIN CARDS  */
+.middle-wrp {
+background: #e9f0fd;
+min-height: 676px;
+}
+
+main {
+max-width: 1170px;
+margin: auto;
+min-height: 676px;
+}
+
+.card {
+  width: 255px;
+  height: 320px;
+  overflow: hidden;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 30px;
+  float: left;
+}
+
+.card:first-child {
+  margin: 0 15px 30px;
+}
+
+.card-img-wrp {
+  height: 280px;
+  width: 255px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-text-wrp {
+  height: calc(320px - 280px);
+  background: #323232;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-prise {
+  line-height: calc(320px - 280px);
+  vertical-align: middle;
+  float: right;
+  padding: 0 12px;
+  background: #8c8c8c;
+  color: white;
+}
+
+.card-title {
+  line-height: calc(320px - 280px);
+  vertical-align: middle;
+  padding-left: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.card:hover .card-text-wrp {
+  background: #1abc9c;
+}
+
+.card:hover .card-prise {
+  background: #1abc9c;
+}
+
+/*   FOOTER   */
+
+.ftr {
+  margin: 0 auto;
+  background-color: rgb(50, 50, 50);
+  min-height: 87px;
+}
+
+.ftr-title {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.75;
+  font-family: "OpenSans";
+  color: rgb(254, 254, 254);
+  padding: 36px;
+}
+
+.last-word {
+  color: rgb(70, 191, 169);
+}
+
+/* ADD TO CARD */
+
+.card-purchase {
+  position: absolute;
+  background-color: rgb(0, 0, 2);
+  opacity: 0;
+  left: 10px;
+  top: 11px;
+  width: 235px;
+  height: 258px;
+  z-index: 5;
+  margin: 0;
+}
+
+.card-icon-wrp {
+  position: absolute;
+  opacity: 0;
+  left: 10px;
+  top: 11px;
+  width: 235px;
+  height: 258px;
+  z-index: 10;
+  margin: 0;
+}
+
+.card:hover .card-purchase {
+  opacity: 0.549;
+}
+
+.card:hover .card-icon-wrp {
+  opacity: 1;
+}
+
+.btnn {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+
+.btnn:hover,
+.btnn:focus {
+  background-color: rgb(26, 188, 156);
+}
+
+.btn-heart {
+  position: absolute;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  left: 35px;
+  top: 80px;
+}
+
+.btn-arrow {
+  position: absolute;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  left: 93px;
+  top: 80px;
+}
+
+.btn-clock {
+  position: absolute;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  display: block;
+  top: 80px;
+  left: 151px;
+}
+
+.btn-add-basket {
+  background-color: rgb(50, 50, 50);
+  border: 1px solid white;
+  position: absolute;
+  width: 165px;
+  height: 50px;
+  left: 35px;
+  top: 137px;
+}
+
+.basket-l {
+  display: block;
+  padding: 0 10px;
+}
+
+.add-to {
+  position: absolute;
+  top: 17px;
+  left: 52px;
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}

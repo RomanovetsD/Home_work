@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --col: 80px;
+  --gap: 20px;
+  --cl: calc(var(--col) + var(--gap));
+}
+
+img {   
+  display: block;
+}
+
+/*      HEADER      */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none; 
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(149, 225, 211);
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 95px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.row-header {
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.col-1 {
+  width: var(--cl);
+}
+
+.col-4 {
+  width: calc(var(--cl) * 4);
+}
+
+.col-5 {
+  width: calc(var(--cl) * 5);
+}
+
+.col-6 {
+  width: calc(var(--cl) * 6);
+} 
+   
+.logo-wrp { 
+  padding: 24px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: logo-appear 1s linear;
+}
+
+
+@keyframes logo-appear {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0; 
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-link::after {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 0;
+  border-bottom: 3px solid rgb(243, 129, 129);
+  transition: all 0.2s linear;
+}
+
+.menu-link:hover {
+  color: rgb(243, 129, 129);
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+/*    Main  text  */
+
+.main {
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin: 34px auto;
+}
+
+/*    Main menu   */
+
+.icon-wrp {
+  width: var(--col);
+  text-align: center;
+  flex-basis: var(--col);
+  flex-shrink: 0;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.service {
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 0;
+}
+
+.service-title {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 15px 0;
+}
+
+.service-description {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+}
+
+/*    MIDDLE  */
+
+.title-ftr {
+  margin-bottom: 45px;
+}
+
+.middle-text {
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+  display: block;
+  width: 980px;
+  margin-bottom: 92px;
+}
+
+.middle-card {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 361px;
+  position: relative;
+  height: 467px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  z-index: 25;
+}
+
+.card-purchase {
+  position: absolute;
+  opacity: 0.5;
+  margin: 0 auto;
+  width: 361px;
+  height: 467px;
+  z-index: 5;
+  margin: 0;
+}
+
+.card-icon-wrp {
+  position: absolute;
+  opacity: 0;
+  right: 10px;
+  bottom: 10px;
+  width: 351px;
+  height: 467px;
+  z-index: 10;
+  margin: 0;
+}
+
+.card:hover {
+  transition: all 0.3s;
+  opacity: 1;
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px rgb(149, 225, 211);
+}
+
+.card:hover .card-purchase {
+  background: linear-gradient(
+    90deg,
+    rgb(252, 227, 138) 0%,
+    rgb(243, 129, 129) 100%
+  );
+}
+
+.card:hover .card-icon-wrp {
+  opacity: 1;
+}
+
+.btn-facebook {
+  position: absolute;
+  cursor: pointer;
+  padding: 0 22px;
+  bottom: 208px;
+  left: 78px;
+  display: block;
+  text-align: center;
+}
+
+.btn-twitter {
+  cursor: pointer;
+  position: absolute;
+  padding: 0 15px;
+  margin: 0 2px;
+  bottom: 208px;
+  left: 133px;
+  display: block;
+}
+
+.btn-pinterest {
+  cursor: pointer;
+  cursor: pointer;
+  position: absolute;
+  padding: 0 17px;
+  bottom: 208px;
+  margin: 0 4px;
+  left: 188px;
+  display: block;
+}
+
+.btn-instagram {
+  cursor: pointer;
+  position: absolute;
+  padding: 0 15px;
+  bottom: 208px;
+  margin: 0 6px;
+  left: 243px;
+  display: block;
+}
+
+.btn {
+  border: none;
+  width: 55px;
+  height: 55px;
+  background-color: rgb(252, 227, 138);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgb(149, 225, 211);
+}
+
+/*   Foter   */
+
+.shape {
+  background-color: rgb(229, 229, 229);
+  opacity: 0.5;
+  width: 1200px;
+  margin-bottom: 12px;
+}
+
+form {
+  font-size: 0;
+  vertical-align: middle;
+}
+
+input {
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+input[type="email"] {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+
+input[type="submit"] {
+  width: 160px;
+  height: 40px;
+  background: var(--main);
+  border: none;
+  color: #fff;
+  background-color: rgb(149, 225, 211);
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: #e7e7e7;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.ftr {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  width: 312px;
+  padding: 12px 0 0 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+}
+
+.accent {
+  color: rgb(246, 192, 192);
+}
+
+.frm {
+  width: 390px;
+}
+
+.text-ftr {
+  display: flex;
+  text-align: center;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.title-ftr {
+  width: 381px;
+}
+
+.ftr-subtitle {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.ftr-title {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  margin-bottom: 80px;
+}
