@@ -67,7 +67,7 @@ a {
 
 .menu-link {
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(34, 34, 34);
   text-transform: uppercase;
 }
@@ -86,7 +86,7 @@ a {
 
 .subtitle {
   font-size: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(34, 34, 34);
   font-weight: bold;
   text-transform: uppercase;
@@ -97,7 +97,7 @@ a {
 
 .title {
   font-size: 16px;
-  font-family: "Droid Serif", serif;
+  font-family: 'Droid Serif', serif;
   color: rgb(119, 119, 119);
   font-style: italic;
   line-height: 1;
@@ -122,7 +122,7 @@ a {
 
 .icon-wrp-down {
   font-size: 14px;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   color: rgb(119, 119, 119);
   display: flex;
   justify-content: center;
@@ -136,7 +136,7 @@ a {
   display: flex;
   justify-content: center;
   font-size: 18px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(34, 34, 34);
   font-weight: bold;
   margin-bottom: 25px;
@@ -146,7 +146,7 @@ a {
   display: flex;
   text-align: center;
   font-size: 14px;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   color: rgb(119, 119, 119);
   margin-bottom: 120px;
 }
@@ -209,7 +209,7 @@ a {
   height: 50px;
   margin-bottom: 30px;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(187, 187, 187);
   font-weight: bold;
   text-transform: uppercase;
@@ -218,7 +218,7 @@ a {
 .contact-textarea {
   font-size: 14px;
   padding: 20px 0 0 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(187, 187, 187);
   font-weight: bold;
   text-transform: uppercase;
@@ -238,7 +238,7 @@ a {
   padding: 100px 0 25px 0;
   text-align: center;
   font-size: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -247,7 +247,7 @@ a {
 .middle-title {
   text-align: center;
   font-size: 16px;
-  font-family: "Droid Serif", serif;
+  font-family: 'Droid Serif', serif;
   color: rgb(119, 119, 119);
   font-style: italic;
   margin-bottom: 77px;
@@ -263,7 +263,7 @@ a {
   width: 240px;
   height: 66px;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: bold;
   margin: 0 auto;
